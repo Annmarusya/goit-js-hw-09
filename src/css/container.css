@@ -17,3 +17,28 @@
     max-width: 1200px;
   }
 }
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-image{ 
+    width: 360px;
+    height: 300px;
+}
+.gallery-image:hover{
+    cursor: url('../Vector.png') 44 44, auto;
+}
+
+img{
+    display: block;
+}
+
+li{
+    list-style: none;
+}
+
+.container    {
+    padding: 24px 156px;
+}
