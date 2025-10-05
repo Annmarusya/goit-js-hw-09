@@ -1,0 +1,67 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 360px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.feedback-form input[type="email"],
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.2s;
+  outline: none;
+  resize: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+.feedback-form input[type="email"]:hover,
+.feedback-form textarea:hover {
+  border-color: #c8c8c8;
+}
+
+.feedback-form input[type="email"]:focus,
+.feedback-form textarea:focus {
+  border-color: #4e75ff;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+  color: #999;
+}
+
+.feedback-form textarea {
+  min-height: 60px;
+}
+
+.feedback-form button[type="submit"] {
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 8px;
+  font-family: inherit;
+}
+
+.feedback-form button[type="submit"]:hover {
+  background-color: #6c8cff;
+}
+
+.feedback-form button[type="submit"]:active {
+  background-color: #3a61eb;
+}

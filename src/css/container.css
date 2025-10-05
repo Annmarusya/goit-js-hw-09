@@ -1,19 +1,43 @@
-/* Styles for Mobile devices */
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 1128px;
+  margin: 24px auto 0;
+  list-style: none;
+  padding: 0;
 }
-/* Styles for Tablet devices */
-@media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
+
+.gallery-item {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
+
+.gallery-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.gallery-image:hover{
+  cursor: url(../img/hover.svg), pointer;
+}
+
+.sl-overlay {
+  background:rgba(46, 47, 66, 0.8) !important;
+}
+.sl-navigation button {
+  сolor: rgba(255, 255, 255, 1) !important;
+}
+
+
+.sl-close {
+  color: rgba(255, 255, 255, 1) !important;
 }
