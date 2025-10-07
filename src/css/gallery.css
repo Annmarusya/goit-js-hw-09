@@ -1,4 +1,4 @@
-/* Gallery styles */
+
 body {
   display: flex;
   justify-content: center;
@@ -8,7 +8,7 @@ body {
   padding-top: 24px;
 }
 
-.gallery {
+.gallery{
   background-color: #ffffff;
   height: 696px;
   width: 1440px;
@@ -19,7 +19,6 @@ body {
   justify-content: center;
   position: relative;
   list-style: none;
-  margin: 0;
 }
 
 .gallery-item {
@@ -49,18 +48,7 @@ body {
   display: block;
 }
 
-/* SimpleLightbox customization */
-.sl-overlay,
-.sl-wrapper {
-  background-color: #2E2F42 !important;
-}
-
-.sl-wrapper {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 100vh !important;
-}
+/* SimpleLightbox стили убраны - они в HTML */
 
 .sl-image {
   max-width: 1112px !important;
@@ -68,17 +56,11 @@ body {
   width: auto !important;
   height: auto !important;
   display: block !important;
+  border-radius: 0 !important;
 }
 
 .sl-caption {
   display: none !important;
-}
-
-.sl-close,
-.sl-prev,
-.sl-next {
-  font-size: 0 !important;
-  text-indent: -9999px !important;
 }
 
 .sl-close {
@@ -88,28 +70,57 @@ body {
   background-position: center !important;
   width: 14px !important;
   height: 14px !important;
+  border: none !important;
+  background-color: transparent !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 1002 !important;
 }
 
 .sl-prev {
+  color: transparent !important;
   background-image: url('../img/left.svg') !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   width: 10.5px !important;
   height: 19.5px !important;
+  border: none !important;
+  background-color: transparent !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  left: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 1002 !important;
 }
 
 .sl-next {
+  color: transparent !important;
   background-image: url('../img/right.svg') !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   width: 10.5px !important;
   height: 19.5px !important;
+  border: none !important;
+  background-color: transparent !important;
+  cursor: pointer !important;
+  position: absolute !important;
+  right: 20px !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 1002 !important;
 }
 
 .sl-counter {
   color: #ffffff !important;
   font-size: 14px !important;
   font-weight: normal !important;
+  position: absolute !important;
+  top: 20px !important;
+  left: 20px !important;
+  z-index: 1002 !important;
 }
